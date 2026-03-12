@@ -1,13 +1,22 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "@/styles/globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { siteConfig } from "@/constants/site";
 import { medicalOrganizationStructuredData } from "@/lib/seo";
 
-const openSans = Open_Sans({
-  subsets: ["latin"],
+const openSans = localFont({
+  src: [
+    {
+      path: "./fonts/OpenSans-Variable.ttf",
+      style: "normal"
+    },
+    {
+      path: "./fonts/OpenSans-Italic-Variable.ttf",
+      style: "italic"
+    }
+  ],
   display: "swap",
   variable: "--font-open-sans"
 });

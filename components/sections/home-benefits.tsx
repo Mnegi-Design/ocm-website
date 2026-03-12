@@ -34,7 +34,7 @@ export function HomeBenefits() {
       </Text>
       <Grid cols={3} className="mt-8">
         {benefits.map((benefit) => (
-          <Card key={benefit}>
+          <Card key={benefit.title}>
             <Image
               src={benefit.image}
               alt={benefit.alt}
