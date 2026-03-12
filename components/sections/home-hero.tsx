@@ -1,6 +1,13 @@
 import Image from "next/image";
 import { ButtonLink, Heading, Section, Text } from "@/components/ui";
 
+const heroHighlights = [
+  "Consultation starts at Rs. 50",
+  "Rs. 50 discount on first consultation above Rs. 100",
+  "Video doctor consultation available 9 AM to 10 PM",
+  "Digital prescription after consultation"
+];
+
 export function HomeHero() {
   return (
     <Section
@@ -9,18 +16,31 @@ export function HomeHero() {
     >
       <header>
         <Heading as="h1" size="h1" className="font-semibold">
-          Online Doctor Consultation in India{" "}
-          <span className="font-medium text-neutral-500">- Trusted, Affordable and Accessible</span>
+          Online Doctor Consultation in India
         </Heading>
-        <Text variant="lead" className="mt-4 max-w-2xl">
-          Consult doctor online through secure video consultation on the Online Chikitsa Mitra app.
-          Connect with qualified doctors from AIIMS and leading medical colleges across India.
+        <Text variant="lead" className="mt-2 max-w-2xl font-medium text-neutral-500">
+          Trusted, Affordable and Accessible
         </Text>
-        <ul className="mt-4 space-y-2 text-sm text-neutral-700">
-          <li>Consultation starts at Rs. 50</li>
-          <li>Rs. 50 discount on first consultation above Rs. 100</li>
-          <li>Video doctor consultation available 9 AM to 10 PM</li>
-          <li>Digital prescription after consultation</li>
+        <ul className="mt-6 space-y-3 text-sm text-neutral-700">
+          {heroHighlights.map((item) => (
+            <li key={item} className="flex items-start gap-3">
+              <span
+                className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary/25 text-neutral-900"
+                aria-hidden="true"
+              >
+                <svg viewBox="0 0 20 20" className="h-3.5 w-3.5" fill="none">
+                  <path
+                    d="M5 10.2L8.2 13.4L15 6.6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>{item}</span>
+            </li>
+          ))}
         </ul>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <ButtonLink href="/consultation" variant="primary" size="lg">
