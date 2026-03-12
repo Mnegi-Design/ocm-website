@@ -18,9 +18,15 @@ export function HomeTrustIndicators() {
       </Text>
       <Grid cols={4} className="mt-8">
         {indicators.map((item) => (
-          <Card key={item.caption} className="text-center" padding="md">
-            <p className="text-3xl font-bold text-secondary">{item.label}</p>
-            <Text variant="body-sm" className="mt-2">
+          <Card
+            key={item.caption}
+            className="group border-secondary/30 bg-secondary/30 text-center transition-colors hover:bg-secondary"
+            padding="md"
+          >
+            <p className="text-3xl font-bold text-secondary transition-colors group-hover:text-white">
+              {item.label}
+            </p>
+            <Text variant="body-sm" className="mt-2 transition-colors group-hover:text-white">
               {item.caption}
             </Text>
           </Card>
