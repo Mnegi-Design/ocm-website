@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const colors = [
   { name: "Primary", value: "#F5C358", className: "bg-primary" },
-  { name: "Secondary", value: "#5A98FF", className: "bg-secondary" },
+  { name: "Secondary", value: "#21AC4B", className: "bg-secondary" },
   { name: "Neutral 900", value: "#0F172A", className: "bg-neutral-900" },
   { name: "Neutral 700", value: "#334155", className: "bg-neutral-700" },
   { name: "Neutral 500", value: "#64748B", className: "bg-neutral-500" },

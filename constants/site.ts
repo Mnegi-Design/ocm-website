@@ -22,5 +22,5 @@ export const siteConfig = {
 
 export const themeColors = {
   primary: "#F5C358",
-  secondary: "#5A98FF"
+  secondary: "#21AC4B"
 } as const;

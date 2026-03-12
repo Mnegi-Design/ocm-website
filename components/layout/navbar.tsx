@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Container } from "@/components/ui/container";
 import { ButtonLink } from "@/components/ui/button";
@@ -17,6 +18,12 @@ const navItems = [
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/90 backdrop-blur">
@@ -39,7 +46,12 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-neutral-700 hover:text-neutral-900"
+                aria-current={isActive(item.href) ? "page" : undefined}
+                className={`text-sm font-medium transition-colors ${
+                  isActive(item.href)
+                    ? "text-neutral-900 underline decoration-primary decoration-2 underline-offset-8"
+                    : "text-neutral-700 hover:text-neutral-900"
+                }`}
               >
                 {item.label}
               </Link>
@@ -97,7 +109,12 @@ export function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-md px-2 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-100 hover:text-neutral-900"
+                  aria-current={isActive(item.href) ? "page" : undefined}
+                  className={`rounded-md px-2 py-2 text-sm font-medium transition-colors ${
+                    isActive(item.href)
+                      ? "bg-primary/20 text-neutral-900"
+                      : "text-neutral-700 hover:bg-neutral-100 hover:text-neutral-900"
+                  }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
