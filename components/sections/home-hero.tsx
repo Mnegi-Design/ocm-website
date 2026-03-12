@@ -15,8 +15,9 @@ export function HomeHero() {
         >
           Telemedicine Care
         </Text>
-        <Heading as="h1" size="h1" className="mt-4">
-          Online Doctor Consultation in India - Trusted, Affordable and Accessible
+        <Heading as="h1" size="h1" className="mt-4 font-semibold">
+          Online Doctor Consultation in India{" "}
+          <span className="font-medium text-neutral-500">- Trusted, Affordable and Accessible</span>
         </Heading>
         <Text variant="lead" className="mt-4 max-w-2xl">
           Consult doctor online through secure video consultation on the Online Chikitsa Mitra app.

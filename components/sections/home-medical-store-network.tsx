@@ -30,7 +30,7 @@ export function HomeMedicalStoreNetwork() {
         </div>
         <div className="overflow-hidden rounded-xl">
           <Image
-            src="https://images.pexels.com/photos/30416194/pexels-photo-30416194.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200"
+            src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80"
             alt="Indian village men and women receiving healthcare support"
             width={1200}
             height={800}

@@ -61,6 +61,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async />
+      </head>
       <body
         className={`${openSans.variable} ${openSans.className} min-h-screen bg-neutral-50 font-sans text-neutral-900 antialiased`}
       >
