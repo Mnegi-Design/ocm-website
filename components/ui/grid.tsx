@@ -15,5 +15,9 @@ const colStyles: Record<NonNullable<GridProps["cols"]>, string> = {
 };
 
 export function Grid({ children, className, cols = 3 }: GridProps) {
-  return <div className={cn("grid gap-4", colStyles[cols], className)}>{children}</div>;
+  return (
+    <div className={cn("grid gap-4 3xl:gap-6 4xl:gap-8", colStyles[cols], className)}>
+      {children}
+    </div>
+  );
 }

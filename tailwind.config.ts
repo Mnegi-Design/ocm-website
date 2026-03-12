@@ -19,6 +19,10 @@ const config: Config = {
           50: "#F8FAFC"
         }
       },
+      screens: {
+        "3xl": "1920px",
+        "4xl": "2560px"
+      },
       spacing: {
         0: "0rem",
         1: "0.25rem",

@@ -18,7 +18,7 @@ export function Section({
   id
 }: SectionProps) {
   return (
-    <section id={id} className={cn("py-12 sm:py-16", className)}>
+    <section id={id} className={cn("py-12 sm:py-16 3xl:py-20 4xl:py-24", className)}>
       {withContainer ? <Container className={containerClassName}>{children}</Container> : children}
     </section>
   );
