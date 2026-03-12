@@ -28,10 +28,13 @@ export function Navbar() {
             className="flex items-center gap-2"
             aria-label="Online Chikitsa Mitra home"
           >
-            <Image src="/logo.svg" alt="Online Chikitsa Mitra logo" width={36} height={36} />
-            <span className="text-sm font-bold text-neutral-900 sm:text-base">
-              Online Chikitsa Mitra
-            </span>
+            <Image
+              src="/logo.svg"
+              alt="Online Chikitsa Mitra logo"
+              width={180}
+              height={52}
+              priority
+            />
           </Link>
 
           <nav aria-label="Primary" className="hidden items-center gap-6 lg:flex">
