@@ -7,16 +7,16 @@ export function AboutStory() {
       <Container>
         <SectionHeading
           title="Our mission"
-          subtitle="To make dependable medical consultation accessible, affordable, and available on every smartphone."
+          subtitle="To make healthcare more accessible through digital technology while empowering medical stores to support trusted care."
         />
         <div className="grid gap-6 text-sm text-neutral-700 lg:grid-cols-2 lg:text-base">
           <p className="surface p-6">
-            Online Chikitsa Mitra was created to close the healthcare access gap by connecting
-            patients to qualified doctors digitally with minimal friction.
+            Online Chikitsa Mitra was created to connect patients with qualified doctors through
+            secure digital consultations accessible from home or local medical stores.
           </p>
           <p className="surface p-6">
-            We focus on trust, consistency, and clinical quality while keeping the experience simple
-            enough for first-time digital users.
+            We focus on making healthcare accessible, affordable, and trusted for communities across
+            India.
           </p>
         </div>
       </Container>

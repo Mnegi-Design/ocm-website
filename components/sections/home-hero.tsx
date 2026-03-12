@@ -3,7 +3,7 @@ import { ButtonLink, Heading, Section, Text } from "@/components/ui";
 
 const heroHighlights = [
   "Consultation starts at Rs. 50",
-  "Rs. 50 discount on first consultation above Rs. 100",
+  "Accessible from home or your nearby medical store",
   "Video doctor consultation available 9 AM to 10 PM",
   "Digital prescription after consultation"
 ];
@@ -15,11 +15,12 @@ export function HomeHero() {
       containerClassName="grid gap-8 lg:grid-cols-2 lg:items-center"
     >
       <header>
-        <Heading as="h1" size="h1" className="font-semibold">
-          Online Doctor Consultation in India
+        <Heading as="h1" size="h1">
+          <span className="font-normal">Consult Qualified Doctors, </span>
+          Anytime. Anywhere.
         </Heading>
         <Text variant="lead" className="mt-2 max-w-2xl font-medium text-neutral-500">
-          Trusted, Affordable and Accessible
+          Affordable care. Trusted doctors. Real support.
         </Text>
         <ul className="mt-6 space-y-3 text-sm text-neutral-700">
           {heroHighlights.map((item) => (
@@ -43,8 +44,8 @@ export function HomeHero() {
           ))}
         </ul>
         <div className="mt-6 flex flex-wrap items-center gap-3">
-          <ButtonLink href="/consultation" variant="primary" size="lg">
-            Start Consultation
+          <ButtonLink href="/telemedicine" variant="primary" size="lg">
+            E-Clinic near you
           </ButtonLink>
           <ButtonLink href="#" variant="ghost" size="lg">
             Download App

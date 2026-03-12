@@ -65,8 +65,8 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-neutral-900">
-                Contact
+              <Link href="/patients" className="hover:text-neutral-900">
+                Patients
               </Link>
             </li>
           </ul>
@@ -77,18 +77,18 @@ export function Footer() {
           </h2>
           <ul className="mt-3 space-y-2 text-sm text-neutral-700">
             <li>
-              <Link href="/consultation" className="hover:text-neutral-900">
-                Consultation
+              <Link href="/telemedicine" className="hover:text-neutral-900">
+                Telemedicine
               </Link>
             </li>
             <li>
-              <Link href="/doctors" className="hover:text-neutral-900">
-                Doctors
+              <Link href="/partnership" className="hover:text-neutral-900">
+                Partnership
               </Link>
             </li>
             <li>
-              <Link href="/pricing" className="hover:text-neutral-900">
-                Pricing
+              <Link href="/insurance" className="hover:text-neutral-900">
+                Insurance
               </Link>
             </li>
           </ul>

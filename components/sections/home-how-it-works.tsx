@@ -3,8 +3,8 @@ import { ReactNode } from "react";
 
 const steps = [
   {
-    title: "Download App",
-    description: "Install the app and set up your profile in a few quick steps.",
+    title: "Open the App",
+    description: "Open the Online Chikitsa Mitra app on your phone.",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
         <rect
@@ -22,8 +22,8 @@ const steps = [
     )
   },
   {
-    title: "Book Consultation",
-    description: "Choose a doctor and time slot that works best for you.",
+    title: "Select Health Concern",
+    description: "Choose your medical concern and consultation need.",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
         <rect x="3" y="5" width="18" height="16" rx="2.5" stroke="currentColor" strokeWidth="1.8" />
@@ -75,8 +75,7 @@ export function HomeHowItWorks() {
         How it works
       </Heading>
       <Text variant="muted" className="mx-auto mt-2 max-w-2xl text-center">
-        A simple 4-step process for smooth and dependable telemedicine care. Doctors are available
-        daily from 9 AM to 10 PM.
+        A simple 4-step process to consult a qualified doctor through secure video consultation.
       </Text>
       <Grid cols={4} className="mt-8">
         {steps.map((step, index) => (

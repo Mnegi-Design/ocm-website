@@ -10,7 +10,7 @@ export function CtaStrip() {
           <p className="mt-2 max-w-2xl text-sm text-white/90 sm:text-base">
             Connect with a doctor now and receive personalized treatment guidance from your home.
           </p>
-          <ButtonLink href="/consultation" variant="primary" className="mt-6">
+          <ButtonLink href="/telemedicine" variant="primary" className="mt-6">
             Book Now
           </ButtonLink>
         </div>

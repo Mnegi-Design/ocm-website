@@ -13,14 +13,15 @@ export function HomePricingPreview() {
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <Heading as="h2" size="h3">
-            Affordable consultation pricing
+            Affordable Care Without Compromise
           </Heading>
           <Text variant="muted" className="mt-2 max-w-2xl">
-            Transparent pricing with essential telemedicine benefits included.
+            Consult a doctor starting from ₹50 and receive digital prescription with clear medical
+            guidance.
           </Text>
         </div>
-        <ButtonLink href="/pricing" variant="ghost">
-          View full pricing
+        <ButtonLink href="/patients" variant="ghost">
+          Explore patient care
         </ButtonLink>
       </div>
       <Grid cols={2} className="mt-8">
@@ -34,10 +35,7 @@ export function HomePricingPreview() {
           <Text variant="body-sm" className="mt-2">
             Consultation starting ₹50.
           </Text>
-          <Text variant="caption" className="mt-2">
-            First-time users get ₹50 discount on consultations above ₹100.
-          </Text>
-          <ButtonLink href="/consultation" variant="primary" className="mt-6">
+          <ButtonLink href="/telemedicine" variant="primary" className="mt-6">
             Start Consultation
           </ButtonLink>
         </Card>

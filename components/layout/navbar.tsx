@@ -8,12 +8,11 @@ import { ButtonLink } from "@/components/ui/button";
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/consultation", label: "Consultation" },
-  { href: "/how-it-works", label: "How It Works" },
-  { href: "/doctors", label: "Doctors" },
-  { href: "/pricing", label: "Pricing" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
+  { href: "/telemedicine", label: "Telemedicine" },
+  { href: "/patients", label: "Patients" },
+  { href: "/partnership", label: "Partnership" },
+  { href: "/insurance", label: "Insurance" },
+  { href: "/about", label: "About" }
 ];
 
 export function Navbar() {
@@ -23,18 +22,16 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/90 backdrop-blur">
       <Container>
         <div className="flex min-h-16 items-center justify-between gap-3">
-          <Link
-            href="/"
-            className="flex items-center gap-2"
-            aria-label="Online Chikitsa Mitra home"
-          >
-            <Image
-              src="/logo.svg"
-              alt="Online Chikitsa Mitra logo"
-              width={180}
-              height={52}
-              priority
-            />
+          <Link href="/" className="flex items-center" aria-label="Online Chikitsa Mitra home">
+            <span className="inline-flex p-4">
+              <Image
+                src="/logo.svg"
+                alt="Online Chikitsa Mitra logo"
+                width={180}
+                height={52}
+                priority
+              />
+            </span>
           </Link>
 
           <nav aria-label="Primary" className="hidden items-center gap-6 lg:flex">
