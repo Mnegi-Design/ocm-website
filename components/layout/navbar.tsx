@@ -60,6 +60,9 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
+            <ButtonLink href="#" variant="secondary" size="sm" className="hidden sm:inline-flex">
+              Download App
+            </ButtonLink>
             <ButtonLink
               href={siteConfig.phoneHref}
               variant="ghost"
@@ -67,9 +70,6 @@ export function Navbar() {
               className="hidden border border-neutral-200 sm:inline-flex"
             >
               Call Now
-            </ButtonLink>
-            <ButtonLink href="#" variant="secondary" size="sm" className="hidden sm:inline-flex">
-              Download App
             </ButtonLink>
             <button
               type="button"
@@ -130,20 +130,20 @@ export function Navbar() {
                 </Link>
               ))}
               <ButtonLink
-                href={siteConfig.phoneHref}
-                variant="ghost"
-                className="mt-1 w-full border border-neutral-200"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Call Now
-              </ButtonLink>
-              <ButtonLink
                 href="#"
                 variant="secondary"
                 className="mt-1 w-full"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Download App
+              </ButtonLink>
+              <ButtonLink
+                href={siteConfig.phoneHref}
+                variant="ghost"
+                className="mt-1 w-full border border-neutral-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Call Now
               </ButtonLink>
             </div>
           </nav>
