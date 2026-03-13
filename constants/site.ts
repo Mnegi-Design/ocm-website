@@ -3,6 +3,8 @@ export const siteConfig = {
   description:
     "Consult doctor online from 9 AM to 10 PM with verified doctors from AIIMS and leading medical colleges. Get Rs. 50 discount on your first consultation.",
   url: "https://www.chikitsamitra.com",
+  phone: "+91 98765 43210",
+  phoneHref: "tel:+919876543210",
   locale: "en_IN",
   keywords: [
     "telemedicine",

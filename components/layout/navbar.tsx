@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Container } from "@/components/ui/container";
 import { ButtonLink } from "@/components/ui/button";
+import { siteConfig } from "@/constants/site";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -59,6 +60,14 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
+            <ButtonLink
+              href={siteConfig.phoneHref}
+              variant="ghost"
+              size="sm"
+              className="hidden border border-neutral-200 sm:inline-flex"
+            >
+              Call Now
+            </ButtonLink>
             <ButtonLink href="#" variant="secondary" size="sm" className="hidden sm:inline-flex">
               Download App
             </ButtonLink>
@@ -120,6 +129,14 @@ export function Navbar() {
                   {item.label}
                 </Link>
               ))}
+              <ButtonLink
+                href={siteConfig.phoneHref}
+                variant="ghost"
+                className="mt-1 w-full border border-neutral-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Call Now
+              </ButtonLink>
               <ButtonLink
                 href="#"
                 variant="secondary"
