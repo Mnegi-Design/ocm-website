@@ -5,6 +5,7 @@ export const siteConfig = {
   url: "https://www.chikitsamitra.com",
   phone: "+91 98765 43210",
   phoneHref: "tel:+919876543210",
+  whatsappHref: "https://wa.me/919876543210",
   locale: "en_IN",
   keywords: [
     "telemedicine",

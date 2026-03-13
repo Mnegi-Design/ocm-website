@@ -20,7 +20,7 @@ const baseStyles =
   "inline-flex items-center justify-center rounded-lg font-semibold transition-colors focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-60";
 
 const variantStyles: Record<Variant, string> = {
-  primary: "bg-primary text-neutral-900 hover:bg-[#e9b33f]",
+  primary: "bg-[#FF5F51] text-white hover:bg-[#e45245]",
   secondary: "bg-secondary text-white hover:bg-[#1c9640]",
   ghost: "bg-transparent text-neutral-700 hover:bg-neutral-200"
 };

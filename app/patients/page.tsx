@@ -49,6 +49,8 @@ export default function PatientsPage() {
       <PageIntro
         title="Patients"
         description="Online Chikitsa Mitra is designed to make healthcare easier, faster, and more accessible. Patients can consult doctors without long travel or waiting times."
+        imageSrc="/assets/images/patient2.jpg"
+        imageAlt="Patient care consultation"
       />
       <Section className="bg-white">
         <Grid cols={3}>

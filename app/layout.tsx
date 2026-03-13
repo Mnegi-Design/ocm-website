@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "@/styles/globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { FloatingWhatsapp } from "@/components/layout/floating-whatsapp";
 import { siteConfig } from "@/constants/site";
 import { medicalOrganizationStructuredData } from "@/lib/seo";
 
@@ -89,6 +90,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           </main>
           <Footer />
         </div>
+        <FloatingWhatsapp />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalOrganizationStructuredData) }}

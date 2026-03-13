@@ -45,6 +45,8 @@ export default function TelemedicinePage() {
       <PageIntro
         title="Telemedicine"
         description="Telemedicine allows patients to consult doctors remotely through secure video consultations. Online Chikitsa Mitra improves healthcare access across cities, towns, and rural areas."
+        imageSrc="/assets/images/telemedicine.jpg"
+        imageAlt="Telemedicine consultation"
       />
       <Section className="bg-white">
         <Grid cols={2}>

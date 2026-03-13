@@ -43,6 +43,8 @@ export default function PartnershipPage() {
       <PageIntro
         title="Partnership"
         description="Online Chikitsa Mitra partners with medical store owners to expand access to digital healthcare and trusted doctor consultations."
+        imageSrc="/assets/images/partnership.jpg"
+        imageAlt="Partnership with neighborhood medical stores"
       />
       <Section className="bg-white">
         <Grid cols={2}>

@@ -60,17 +60,43 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <ButtonLink href="#" variant="secondary" size="sm" className="hidden sm:inline-flex">
-              Download App
-            </ButtonLink>
             <ButtonLink
               href={siteConfig.phoneHref}
-              variant="ghost"
-              size="sm"
-              className="hidden border border-neutral-200 sm:inline-flex"
+              variant="secondary"
+              size="lg"
+              className="hidden bg-[#F6C358] text-black hover:bg-[#e4b648] sm:inline-flex"
             >
               Call Now
             </ButtonLink>
+            <label className="relative hidden sm:block">
+              <span className="sr-only">Select language</span>
+                <select
+                  aria-label="Select language"
+                  defaultValue="en"
+                className="min-h-[46px] appearance-none rounded-lg border border-neutral-200 bg-white px-4 py-2 pr-10 text-sm font-medium text-neutral-700 shadow-sm transition hover:border-neutral-500 focus:outline-none focus:ring-2 focus:ring-secondary"
+              >
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+              </select>
+              <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-neutral-500">
+                <svg
+                  viewBox="0 0 20 20"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5 7.5L10 12.5L15 7.5"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+            </label>
             <button
               type="button"
               className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-neutral-200 text-neutral-700 hover:bg-neutral-100 lg:hidden"
@@ -130,21 +156,43 @@ export function Navbar() {
                 </Link>
               ))}
               <ButtonLink
-                href="#"
-                variant="secondary"
-                className="mt-1 w-full"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Download App
-              </ButtonLink>
-              <ButtonLink
                 href={siteConfig.phoneHref}
-                variant="ghost"
-                className="mt-1 w-full border border-neutral-200"
+                variant="secondary"
+                className="mt-1 w-full bg-[#F6C358] text-black hover:bg-[#e4b648]"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Call Now
               </ButtonLink>
+              <label className="relative mt-1 block">
+                <span className="sr-only">Select language</span>
+                <select
+                  aria-label="Select language"
+                  defaultValue="en"
+                  className="min-h-11 w-full appearance-none rounded-lg border border-neutral-200 bg-white px-4 py-3 pr-10 text-sm font-medium text-neutral-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary"
+                  onChange={() => setIsMenuOpen(false)}
+                >
+                  <option value="en">English</option>
+                  <option value="hi">Hindi</option>
+                </select>
+                <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-neutral-500">
+                  <svg
+                    viewBox="0 0 20 20"
+                    width="16"
+                    height="16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </label>
             </div>
           </nav>
         ) : null}
