@@ -20,7 +20,8 @@ export function HomeHero() {
           Secure Online Consultation
         </Text>
         <Heading as="h1" size="h1" className="mt-3">
-          Consult qualified doctors online through secure video consultation.
+          Consult qualified doctors online through{" "}
+          <span className="font-medium text-neutral-500">secure video consultation</span>
         </Heading>
         <Text variant="lead" className="mt-4 max-w-2xl">
           Connect with qualified doctors from AIIMS and leading medical colleges across India.
@@ -50,10 +51,15 @@ export function HomeHero() {
 
         <div className="mt-7 flex flex-wrap items-center gap-3">
           <ButtonLink href="/telemedicine" variant="primary" size="lg">
-            Book Online Consultation
+            E-Clinic Near me
           </ButtonLink>
-          <ButtonLink href="#" variant="secondary" size="lg">
-            Download Online Chikitsa Mitra App
+          <ButtonLink
+            href="#"
+            variant="ghost"
+            size="lg"
+            className="border border-secondary text-secondary hover:bg-secondary/10 hover:text-secondary"
+          >
+            Download the App
           </ButtonLink>
         </div>
       </header>
