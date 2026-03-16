@@ -68,6 +68,8 @@ export default function TelemedicinePage() {
         description="Digital healthcare in India is transforming how patients access medical advice, helping bridge the healthcare access gap with better connectivity and trusted telemedicine services."
         imageSrc="/hero-image.jpg"
         imageAlt="Indian patients using telemedicine consultation at a neighborhood medical store"
+        primaryCtaLabel="Get Consultation"
+        primaryCtaHref="/consultation"
       />
 
       <Section className="bg-white">
@@ -223,6 +225,13 @@ export default function TelemedicinePage() {
               Telemedicine supports privacy, accessibility, and timely medical advice for women who
               may otherwise delay care.
             </Text>
+            <ButtonLink
+              href="#"
+              variant="ghost"
+              className="mt-6 border border-secondary text-secondary hover:bg-secondary/10 hover:text-secondary"
+            >
+              Download the app
+            </ButtonLink>
           </div>
         </div>
       </Section>
@@ -350,12 +359,15 @@ export default function TelemedicinePage() {
                 Community trust + Digital healthcare + Medical expertise
               </Heading>
             </Card>
+            <ButtonLink href="/contact" variant="secondary" className="mt-6">
+              Contact us
+            </ButtonLink>
           </div>
         </div>
       </Section>
 
       <Section className="bg-white">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div>
           <div>
             <Text variant="caption" className="font-semibold uppercase tracking-[0.18em] text-secondary">
               Future of Telemedicine
@@ -368,9 +380,6 @@ export default function TelemedicinePage() {
               healthcare network that supports both urban and rural India.
             </Text>
           </div>
-          <ButtonLink href="/partnership" variant="secondary">
-            Explore partnerships
-          </ButtonLink>
         </div>
 
         <Grid cols={3} className="mt-8">
