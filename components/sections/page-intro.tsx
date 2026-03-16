@@ -2,17 +2,27 @@ import Image from "next/image";
 import { Heading, Section, Text } from "@/components/ui";
 
 interface PageIntroProps {
+  eyebrow?: string;
   title: string;
   description: string;
   imageSrc?: string;
   imageAlt?: string;
 }
 
-export function PageIntro({ title, description, imageSrc, imageAlt }: PageIntroProps) {
+export function PageIntro({ eyebrow, title, description, imageSrc, imageAlt }: PageIntroProps) {
   return (
     <Section className="bg-white" containerClassName="py-2">
       <header className="grid gap-8 md:grid-cols-2 md:items-center">
         <div>
+          {eyebrow ? (
+            <Text
+              as="div"
+              variant="caption"
+              className="font-semibold uppercase tracking-[0.18em] text-secondary"
+            >
+              {eyebrow}
+            </Text>
+          ) : null}
           <Heading as="h1" size="h2">
             {title}
           </Heading>

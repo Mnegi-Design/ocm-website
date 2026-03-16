@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, Grid, Heading, Section, Text } from "@/components/ui";
+import { ButtonLink, Card, Grid, Heading, Section, Text } from "@/components/ui";
 
 const affordabilityPoints = [
   {
@@ -29,7 +29,7 @@ export function HomeAffordability() {
             Affordable Consultation
           </Text>
           <Heading as="h2" size="h2" className="mt-3 max-w-3xl">
-            Healthcare should be accessible to every family.
+            Accessible Healthcare to every Family
           </Heading>
           <Text variant="lead" className="mt-4 max-w-3xl">
             With Online Chikitsa Mitra, patients get transparent pricing, qualified doctors, and
@@ -61,8 +61,8 @@ export function HomeAffordability() {
           </Grid>
         </div>
 
-        <div className="space-y-4">
-          <Card className="overflow-hidden p-0">
+        <div>
+          <Card className="overflow-hidden border-secondary/20 bg-secondary/[0.06] p-0">
             <div className="relative h-64 w-full">
               <Image
                 src="/assets/images/patient.jpg"
@@ -72,18 +72,6 @@ export function HomeAffordability() {
               />
             </div>
             <div className="p-6">
-              <Heading as="h3" size="h5">
-                New to Online Chikitsa Mitra?
-              </Heading>
-              <Text variant="body" className="mt-3">
-                Get ₹50 discount on your first consultation when the consultation fee is above ₹100.
-                This introductory offer helps patients try trusted online medical consultation at a
-                reduced cost.
-              </Text>
-            </div>
-          </Card>
-
-          <Card className="border-secondary/20 bg-secondary/[0.06]">
             <Text variant="caption" className="font-semibold uppercase tracking-[0.18em] text-secondary">
               Introductory Offer
             </Text>
@@ -94,6 +82,10 @@ export function HomeAffordability() {
               Valid when the consultation fee is above ₹100. Built to help new patients experience
               qualified digital care with lower entry cost.
             </Text>
+            <ButtonLink href="/telemedicine" variant="primary" className="mt-6">
+              Consult now
+            </ButtonLink>
+            </div>
           </Card>
         </div>
       </div>

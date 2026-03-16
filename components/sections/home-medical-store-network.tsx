@@ -16,8 +16,7 @@ export function HomeMedicalStoreNetwork() {
             Assisted Consultation
           </Text>
           <Heading as="h2" size="h2" className="mt-3 max-w-3xl">
-            Online Chikitsa Mitra also supports assisted video consultation at selected
-            neighborhood medical stores.
+            Consult a doctor at your nearby medical store with assisted video consultation
           </Heading>
           <Text variant="lead" className="mt-4 max-w-3xl">
             Patients who prefer help with technology can visit a partnered medical store and

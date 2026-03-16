@@ -81,10 +81,6 @@ export function HomeHowItWorks() {
       <Heading as="h2" size="h2" className="mt-3 text-center">
         How to Consult a Doctor Online
       </Heading>
-      <Text variant="lead" className="mx-auto mt-3 max-w-3xl text-center">
-        Download the app, choose your medical concern, connect through secure video consultation,
-        and receive a digital prescription. Doctors are available daily between 9 AM and 10 PM.
-      </Text>
       <Grid cols={4} className="mt-8">
         {steps.map((step, index) => (
           <Card key={step.title}>
@@ -103,6 +99,23 @@ export function HomeHowItWorks() {
           </Card>
         ))}
       </Grid>
+      <div className="mt-6 flex justify-center">
+        <div className="inline-flex items-center gap-3 rounded-full border border-secondary/20 bg-secondary/[0.06] px-4 py-3 text-sm font-medium text-neutral-900">
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-secondary/15 text-secondary">
+            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.8" />
+              <path
+                d="M12 8V12L14.8 14.2"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </span>
+          <span>Doctors are available daily between 9 AM and 10 PM</span>
+        </div>
+      </div>
     </Section>
   );
 }

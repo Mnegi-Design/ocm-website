@@ -17,12 +17,24 @@ const institutions = [
 ];
 
 const specialties = [
-  "General Physician Online",
-  "Gynecologist Consultation Online",
-  "Pediatrician Online",
-  "Dermatologist Online",
-  "Psychiatrist Consultation",
-  "Chronic disease specialists (Diabetes, Hypertension, Thyroid)"
+  {
+    label: "General Physician Online"
+  },
+  {
+    label: "Gynecologist Consultation Online"
+  },
+  {
+    label: "Pediatrician Online"
+  },
+  {
+    label: "Dermatologist Online"
+  },
+  {
+    label: "Psychiatrist Consultation"
+  },
+  {
+    label: "Chronic disease specialists (Diabetes, Hypertension, Thyroid)"
+  }
 ];
 
 export function HomeDoctorCredibility() {
@@ -36,10 +48,6 @@ export function HomeDoctorCredibility() {
           <Heading as="h2" size="h2" className="mt-3">
             Doctors from AIIMS & Medical Colleges
           </Heading>
-          <Text variant="lead" className="mt-4">
-            Consult experienced doctors trained at AIIMS, government medical colleges, and reputed
-            teaching hospitals across India.
-          </Text>
           <div className="mt-6 overflow-hidden rounded-2xl shadow-card">
             <Image
               src="/assets/images/doctor.jpg"
@@ -91,8 +99,8 @@ export function HomeDoctorCredibility() {
             </Heading>
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
               {specialties.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-neutral-700">
-                  <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary/20 text-neutral-900">
+                <li key={item.label} className="flex items-start gap-3 text-sm text-neutral-700">
+                  <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/20 text-neutral-900">
                     <svg viewBox="0 0 20 20" className="h-3.5 w-3.5" fill="none" aria-hidden="true">
                       <path
                         d="M5 10.2L8.2 13.4L15 6.6"
@@ -103,7 +111,7 @@ export function HomeDoctorCredibility() {
                       />
                     </svg>
                   </span>
-                  <span>{item}</span>
+                  <span>{item.label}</span>
                 </li>
               ))}
             </ul>

@@ -20,8 +20,7 @@ export function HomeHero() {
           Secure Online Consultation
         </Text>
         <Heading as="h1" size="h1" className="mt-3">
-          Consult qualified doctors online through{" "}
-          <span className="font-medium text-neutral-500">secure video consultation</span>
+          Consult Qualified Doctors through Secure Video Calls
         </Heading>
         <Text variant="lead" className="mt-4 max-w-2xl">
           Connect with qualified doctors from AIIMS and leading medical colleges across India.

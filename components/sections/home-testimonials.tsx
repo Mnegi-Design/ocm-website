@@ -29,7 +29,7 @@ export function HomeTestimonials() {
         Testimonials
       </Text>
       <Heading as="h2" size="h2" className="mt-3">
-        Patient stories in text and video form
+        What are our Patient saying?
       </Heading>
       <Text variant="lead" className="mt-3 max-w-3xl">
         Real experiences from patients who used Online Chikitsa Mitra for affordable and guided
