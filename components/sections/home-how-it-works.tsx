@@ -71,11 +71,19 @@ const steps = [
 export function HomeHowItWorks() {
   return (
     <Section className="bg-white">
-      <Heading as="h2" size="h3" className="text-center">
-        How it works
+      <Text
+        variant="caption"
+        as="div"
+        className="text-center font-semibold uppercase tracking-[0.18em] text-secondary"
+      >
+        Consultation Journey
+      </Text>
+      <Heading as="h2" size="h2" className="mt-3 text-center">
+        How to Consult a Doctor Online
       </Heading>
-      <Text variant="muted" className="mx-auto mt-2 max-w-2xl text-center">
-        A simple 4-step process to consult a qualified doctor through secure video consultation.
+      <Text variant="lead" className="mx-auto mt-3 max-w-3xl text-center">
+        Download the app, choose your medical concern, connect through secure video consultation,
+        and receive a digital prescription. Doctors are available daily between 9 AM and 10 PM.
       </Text>
       <Grid cols={4} className="mt-8">
         {steps.map((step, index) => (

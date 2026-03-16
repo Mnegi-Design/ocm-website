@@ -2,50 +2,39 @@ import { Accordion, Heading, Section, Text } from "@/components/ui";
 
 const faqs = [
   {
-    id: "consult-online",
-    question: "How do I consult a doctor online?",
-    answer:
-      "Download the app or open the website, choose a doctor, pick a slot, and join the video consultation at the scheduled time."
-  },
-  {
-    id: "prescription-valid",
-    question: "Is the prescription valid?",
-    answer:
-      "Yes. Prescriptions are issued by qualified and verified registered medical professionals."
-  },
-  {
-    id: "doctors-verified",
-    question: "Are doctors verified?",
-    answer:
-      "Yes. Doctor profiles are credential-verified before onboarding, and quality standards are monitored continuously."
-  },
-  {
-    id: "charges",
-    question: "What are consultation charges?",
-    answer:
-      "Consultation starts at Rs. 50 depending on specialty, with transparent pricing and no hidden charges."
-  },
-  {
-    id: "medical-store-consult",
-    question: "Can I consult through a medical store?",
-    answer:
-      "Yes. In partner locations, patients can access consultation support through connected medical store points."
+    id: "starting-fee",
+    question: "What is the starting consultation fee?",
+    answer: "Consultation starts at ₹50 depending on speciality."
   },
   {
     id: "first-time-offer",
     question: "Is there any first-time offer?",
-    answer: "Yes. First-time users receive Rs. 50 discount on consultations above Rs. 100."
+    answer: "Yes. First-time users receive ₹50 discount on consultations above ₹100."
+  },
+  {
+    id: "availability",
+    question: "Are doctors available 24x7?",
+    answer: "Doctors are available from 9 AM to 10 PM."
+  },
+  {
+    id: "doctors-verified",
+    question: "Are doctors verified?",
+    answer: "Yes. All doctors are qualified and verified registered medical professionals."
   }
 ];
 
 export function HomeFaq() {
   return (
     <Section className="bg-white">
-      <Heading as="h2" size="h3">
+      <Text variant="caption" className="font-semibold uppercase tracking-[0.18em] text-secondary">
+        FAQ
+      </Text>
+      <Heading as="h2" size="h2" className="mt-3">
         Frequently asked questions
       </Heading>
-      <Text variant="muted" className="mt-2 max-w-2xl">
-        Quick answers to common consultation and prescription questions.
+      <Text variant="lead" className="mt-3 max-w-3xl">
+        Quick answers about consultation fees, doctor availability, first-time offers, and
+        verification standards.
       </Text>
       <Accordion items={faqs} className="mt-8" />
     </Section>

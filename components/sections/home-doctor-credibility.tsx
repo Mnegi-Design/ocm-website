@@ -1,118 +1,115 @@
+import Image from "next/image";
 import { Card, Grid, Heading, Section, Text } from "@/components/ui";
 
-const credentials = [
+const institutions = [
   {
-    title: "AIIMS & Medical College Doctors",
-    description:
-      "Consult doctors trained at AIIMS, government medical colleges, and reputed teaching hospitals.",
-    icon: (
-      <svg
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-        className="h-8 w-8"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M3 8L12 4L21 8L12 12L3 8Z"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M7 10.5V14.5C7 16.2 9.3 17.5 12 17.5C14.7 17.5 17 16.2 17 14.5V10.5"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path d="M21 8V13" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-      </svg>
-    )
+    title: "AIIMS",
+    description: "Doctors trained in India’s most recognized medical institutions."
   },
   {
-    title: "Verified Registered Professionals",
-    description:
-      "All doctors are qualified and verified registered medical professionals before onboarding.",
-    icon: (
-      <svg
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-        className="h-8 w-8"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12 3L19 6V11.5C19 16.2 16.2 19.9 12 21C7.8 19.9 5 16.2 5 11.5V6L12 3Z"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9 11.8L11 13.8L15 9.8"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    )
+    title: "Government Medical Colleges",
+    description: "Clinicians with strong academic and practical public healthcare training."
   },
   {
-    title: "Specialist Access",
-    description:
-      "General physician, gynecology, pediatrics, dermatology, psychiatry, and chronic care specialists.",
-    icon: (
-      <svg
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-        className="h-8 w-8"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M14.5 4.5C14.5 6.2 13.2 7.5 11.5 7.5C9.8 7.5 8.5 6.2 8.5 4.5C8.5 2.8 9.8 1.5 11.5 1.5C13.2 1.5 14.5 2.8 14.5 4.5Z"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
-        <path
-          d="M9 9H14L16 13.5L13.5 15.5V22.5H10V15.5L7.5 13.5L9 9Z"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    )
+    title: "Reputed teaching hospitals",
+    description: "Experienced doctors with structured clinical and specialist practice exposure."
   }
+];
+
+const specialties = [
+  "General Physician Online",
+  "Gynecologist Consultation Online",
+  "Pediatrician Online",
+  "Dermatologist Online",
+  "Psychiatrist Consultation",
+  "Chronic disease specialists (Diabetes, Hypertension, Thyroid)"
 ];
 
 export function HomeDoctorCredibility() {
   return (
     <Section className="bg-white">
-      <Heading as="h2" size="h3">
-        Doctors from AIIMS and leading medical colleges
-      </Heading>
-      <Text variant="muted" className="mt-2 max-w-3xl">
-        Qualified doctors and specialist care delivered with secure digital consultation standards.
-      </Text>
-      <Grid cols={3} className="mt-8">
-        {credentials.map((item) => (
-          <Card key={item.title}>
-            <span className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/20 text-primary">
-              {item.icon}
-            </span>
+      <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+        <div>
+          <Text variant="caption" className="font-semibold uppercase tracking-[0.18em] text-secondary">
+            Qualified Doctors
+          </Text>
+          <Heading as="h2" size="h2" className="mt-3">
+            Doctors from AIIMS & Medical Colleges
+          </Heading>
+          <Text variant="lead" className="mt-4">
+            Consult experienced doctors trained at AIIMS, government medical colleges, and reputed
+            teaching hospitals across India.
+          </Text>
+          <div className="mt-6 overflow-hidden rounded-2xl shadow-card">
+            <Image
+              src="/assets/images/doctor.jpg"
+              alt="Indian doctor representing qualified online medical consultation"
+              width={1200}
+              height={800}
+              className="h-72 w-full object-cover"
+            />
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <Grid cols={1}>
+            {institutions.map((item) => (
+              <Card key={item.title} className="border-secondary/15">
+                <div className="flex items-start gap-4">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary/10 text-secondary">
+                    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden="true">
+                      <path
+                        d="M12 4L20 8.2L12 12.4L4 8.2L12 4Z"
+                        stroke="currentColor"
+                        strokeWidth="1.8"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M7.2 10.4V14.6C7.2 15.9 9.4 17 12 17C14.6 17 16.8 15.9 16.8 14.6V10.4"
+                        stroke="currentColor"
+                        strokeWidth="1.8"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </span>
+                  <div>
+                    <Heading as="h3" size="h5">
+                      {item.title}
+                    </Heading>
+                    <Text variant="body-sm" className="mt-2">
+                      {item.description}
+                    </Text>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </Grid>
+
+          <Card>
             <Heading as="h3" size="h5">
-              {item.title}
+              Our panel includes
             </Heading>
-            <Text variant="muted" className="mt-2">
-              {item.description}
-            </Text>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              {specialties.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-neutral-700">
+                  <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary/20 text-neutral-900">
+                    <svg viewBox="0 0 20 20" className="h-3.5 w-3.5" fill="none" aria-hidden="true">
+                      <path
+                        d="M5 10.2L8.2 13.4L15 6.6"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </Card>
-        ))}
-      </Grid>
+        </div>
+      </div>
     </Section>
   );
 }
