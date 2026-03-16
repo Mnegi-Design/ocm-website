@@ -1,4 +1,4 @@
-import { Accordion, Heading, Section, Text } from "@/components/ui";
+import { Accordion, ButtonLink, Heading, Section, Text } from "@/components/ui";
 
 const faqs = [
   {
@@ -37,6 +37,14 @@ export function HomeFaq() {
         verification standards.
       </Text>
       <Accordion items={faqs} className="mt-8" />
+      <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-neutral-200 bg-neutral-50 px-5 py-4">
+        <Text variant="body" className="font-medium text-neutral-900">
+          Know more?
+        </Text>
+        <ButtonLink href="/contact" variant="primary">
+          Contact us
+        </ButtonLink>
+      </div>
     </Section>
   );
 }
